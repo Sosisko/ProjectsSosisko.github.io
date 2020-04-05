@@ -1,0 +1,264 @@
+@font-face {
+	font-family: Geometria-Light; /* Ð˜Ð¼Ñ ÑˆÑ€Ð¸Ñ„Ñ‚Ð° */
+    src: url(fonts/Geometria-Light.ttf); /* ÐŸÑƒÑ‚ÑŒ Ðº Ñ„Ð°Ð¹Ð»Ñƒ ÑÐ¾ ÑˆÑ€Ð¸Ñ„Ñ‚Ð¾Ð¼ */
+    src: url(fonts/Geometria-Light.woff); 
+   
+}
+
+
+body {
+    font-family: Geometria-Light, Georgia, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: url(img/visual_in1.jpg);
+    background-repeat: no-repeat;
+    background-size: 1350px;
+}
+
+header {
+	margin: 0; 
+	padding: 0;
+
+
+}
+
+
+
+/*.header::after {
+content: "";
+display: table;
+clear: both;
+}*/
+
+.dw-menu {
+	margin-top: 0;
+	padding: 0;
+	width: 100%;  /*Ð Ð°ÑÑ‚ÑÐ½ÑƒÑ‚ÑŒ Ð½Ð° Ð²ÑÑŽ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ*/
+	background: linear-gradient(to bottom, #99CC99, #007941);
+	}
+
+.dw-menu ul {
+	list-style: none;
+}
+
+.dw-menu > ul {
+	display: flex;
+	justify-content: center;
+}
+
+.dw-menu > ul > li {
+		/* добавил */
+	position: relative;
+}
+
+.dw-menu > ul li a {
+	display: block;
+	background: linear-gradient(to bottom, #99CC99, #007941);
+	padding: 10px 30px 10px 30px; /*ÐžÑ‚ÑÑ‚ÑƒÐ¿Ñ‹ ÑÑÑ‹Ð»Ð¾Ðº Ð´Ñ€ÑƒÐ³ Ð¾Ñ‚ Ð´Ñ€ÑƒÐ³Ð°*/
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+
+.dw-menu li a:hover {
+	background: #00a64a;
+	color: #fff;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+
+}
+
+/*ÐŸÐ¾Ð´Ð¼ÐµÐ½ÑŽ*/
+.dw-menu li ul {
+	font-family: Arial, sans-serif;
+	position: absolute;
+	display: none;
+}
+
+/*.dw-menu li > ul li {
+	border-bottom: : 2px solid red;
+}*/
+
+.dw-menu li > ul li a {
+	
+	text-transform: none;
+	background: #e4e4e5;
+	color: #454547;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	/* добавил */
+	text-align: left;
+	min-width: 150px;
+
+}
+.dw-menu li:hover > ul {
+    display: block;
+    padding: 0;
+}
+	
+.hov li:hover > a {
+
+	background: #454547;
+	background-position: -101px 0;	
+}
+
+.phone-number, .email {
+	text-decoration: none;
+}
+.phone-number{
+	font-weight: 700;
+	font-size: 15px;
+	color: #000;
+}
+
+.email {
+	color: #808080;
+}
+
+.container {
+width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.header__logo {
+	position: absolute;
+	float: left;
+	top: 48px;
+	left: 170px;
+	}
+
+.header__contacts {
+	float: right;
+
+}
+
+.clear {
+	clear: both;
+}
+
+.header__title {
+	margin: 0 0 0 220px;
+	padding: 0;
+}
+
+/*Левое меню*/
+.left_menu{
+	width: 300px;
+}
+/* .accordeon,
+.accordeon ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.accordeon li {
+	margin: 0 0 2px 0;
+	padding: 0;
+}
+.accordeon > li > a {
+	background: #FFF;
+	color: #333;
+	display: block;
+	font-weight: 700;
+	height: 50px;
+	line-height: 50px;
+	padding: 0 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 100%;
+}
+.accordeon > li.slide > a,
+.accordeon > li.active > a {
+	background: #00a64a;
+	color: #FFF;
+}
+.accordeon > li > ul {
+	display: none;
+	width: 100%;
+	background: #FFF;
+	padding: 10px 0;
+}
+.accordeon > li.active > ul {
+	display: block;
+	
+}
+.accordeon > li > ul > li {
+	padding: 5px 30px;
+	text-decoration: none;
+	display: block;
+	color: #333;
+} */
+
+.left_menu li > ul li a {
+    text-transform: none;
+    background: #e4e4e5;
+    color: #454547;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    min-width: 150px;
+}
+
+.left_menu li > ul {
+	padding: 0;
+}
+.left_menu > ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.left_menu > ul > li {
+		/* добавил */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+.left_menu > ul > li > ul >li{
+		/* добавил */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+.left_menu > ul li a {
+	display: block;
+	background: linear-gradient(to bottom, #00a64a, #007941);
+	padding: 10px 30px 10px 30px; 
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	transition: all 0.2s ease;
+}
+.left_menu  li a:hover {
+	background: #00a64a;
+	color: #fff;
+	box-shadow: 1px 5px 10px -5px black;
+	transition: all 0.3s ease;
+
+}
+.left_menu li:hover > ul {
+    display: block;
+    padding: 0;
+}
+
+.left_menu .hov li:hover > a {
+
+	background: #454547;
+	background-position: -101px 0;	
+}
+
+.title {
+	margin-left: 200px;
+	font-size: 23px;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: green;
+}
